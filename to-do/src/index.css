@@ -1,0 +1,187 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary colors */
+  --Bright-Blue: rgb(58, 123, 253);
+  --Check-Background: linear-gradient(rgb(87, 221, 255), rgb(192, 88, 243));
+
+  /* Light theme */
+  --Very-Light-Gray-LightTheme: #fafafa;
+  --Very-Light-BlueGray-LightTheme: #e4e5f1;
+  --Light-BlueGray-LightTheme: #d2d3db;
+  --Dark-BlueGray-LightTheme: #9394a5;
+  --Very-Dark-BlueGray-LightTheme: #484b6a;
+
+  /* Dark theme */
+  --Very-Dark-Blue-DarkTheme: #161722;
+  --Very-Dark-Desaturated-Blue-DarkTheme: #25273c;
+  --Light-Blue-DarkTheme: #cacde8;
+  --Light-Blue-hover-DarkTheme: #e4e5f1;
+  --Dark-Blue-DarkTheme: #777a92;
+  --Dark-Grayish-Blue-DarkTheme: #4d5066;
+  --Very-Dark-Grayish-Blue-DarkTheme: #393a4c;
+
+  --White: rgb(255, 255, 255);
+  --Black: rgb(0, 0, 0);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100%;
+
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.dark-theme {
+  background: var(--Very-Dark-Blue-DarkTheme);
+  color: var(--Light-Blue-DarkTheme);
+}
+
+.light-theme {
+  background: var(--Very-Light-BlueGray-LightTheme);
+  color: var(--Very-Dark-BlueGray-LightTheme);
+}
+
+/* Form Task */
+
+.dark-theme .input-container {
+  background: var(--Very-Dark-Desaturated-Blue-DarkTheme);
+}
+
+.light-theme .input-container {
+  background: var(--Very-Light-Gray-LightTheme);
+}
+
+.dark-theme form .circle-input {
+  border-color: var(--Very-Dark-Grayish-Blue-DarkTheme)
+}
+
+.light-theme form .circle-input {
+  border-color: var(--Light-BlueGray-LightTheme);
+}
+
+.dark-theme .input-container input {
+  color: var(--Light-Blue-DarkTheme);
+}
+
+.light-theme .input-container input {
+  color: var(--Very-Dark-BlueGray-LightTheme);
+}
+
+/* Task List */
+
+.dark-theme .task-list {
+  background: var(--Very-Dark-Desaturated-Blue-DarkTheme);
+}
+
+.light-theme .task-list {
+  background: var(--Very-Light-Gray-LightTheme);
+}
+
+.dark-theme .list::-webkit-scrollbar-thumb {
+  background: var(--Light-Blue-DarkTheme);
+}
+
+.dark-theme .list::-webkit-scrollbar-track {
+  background-color: var(--Very-Dark-Desaturated-Blue-DarkTheme); 
+}
+
+.light-theme .list::-webkit-scrollbar-thumb {
+  background: var(--Very-Dark-BlueGray-LightTheme);
+}
+
+.light-theme .list::-webkit-scrollbar-track {
+  background-color: var(--Very-Light-Gray-LightTheme); 
+}
+
+/* Task */
+
+.dark-theme .task-container {
+  border-color: var(--Very-Dark-Grayish-Blue-DarkTheme);
+}
+
+.light-theme .task-container {
+  border-color: var(--Light-BlueGray-LightTheme);
+}
+
+.dark-theme .task .wrapper_button {
+  background: var(--Very-Dark-Grayish-Blue-DarkTheme);
+}
+
+.light-theme .task .wrapper_button {
+  background: var(--Light-BlueGray-LightTheme);
+}
+
+.dark-theme .wrapper_button button {
+  background: var(--Very-Dark-Desaturated-Blue-DarkTheme);
+}
+
+.light-theme .wrapper_button button {
+  background: var(--Very-Light-Gray-LightTheme);
+}
+
+.dark-theme .delete-task {
+  color: var(--Dark-Grayish-Blue-DarkTheme);
+}
+
+.light-theme .delete-task {
+  color: var(--Very-Dark-BlueGray-LightTheme);
+}
+
+.dark-theme .task.completed p {
+  color: var(--Dark-Grayish-Blue-DarkTheme);
+}
+
+.light-theme .task.completed p {
+  color: var(--Dark-BlueGray-LightTheme);
+}
+
+
+/* Footer Task List */
+
+.dark-theme .footer-task-list {
+  background: var(--Very-Dark-Desaturated-Blue-DarkTheme);
+  border-color: var(--Very-Dark-Grayish-Blue-DarkTheme);
+  color: var(--Dark-Grayish-Blue-DarkTheme);
+}
+
+.light-theme .footer-task-list {
+  background: var(--Very-Light-Gray-LightTheme);
+  border-color: var(--Light-BlueGray-LightTheme);
+  color: var(--Dark-Blue-DarkTheme);
+}
+
+.dark-theme .footer-task-list-mobile {
+  border-color: var(--Very-Dark-Grayish-Blue-DarkTheme);
+  color: var(--Dark-Grayish-Blue-DarkTheme);
+}
+
+.light-theme .footer-task-list-mobile {
+  border-color: var(--Light-BlueGray-LightTheme);
+  color: var(--Dark-Blue-DarkTheme);
+}
+
+.dark-theme .footer-task-list span:hover,
+.dark-theme .footer-task-list-mobile span:hover {
+  color: var(--Light-Blue-hover-DarkTheme);
+}
+
+.light-theme .footer-task-list span:hover,
+.light-theme .footer-task-list-mobile span:hover {
+  color: var(--Very-Dark-BlueGray-LightTheme);
+}
+
+.dark-theme .footer-task-list .filters {
+  color: var(--Dark-Grayish-Blue-DarkTheme);
+}
+
+.dark-theme .footer-task-list .filters {
+  color: var(--Dark-BlueGray-LightTheme);
+}

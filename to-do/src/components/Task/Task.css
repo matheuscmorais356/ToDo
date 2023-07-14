@@ -1,0 +1,77 @@
+
+.task-container {
+  width: 100%;
+  height: 6rem;
+  border-bottom: 1px solid;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.task {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+
+}
+
+.task p {
+  width: 90%;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.task .wrapper_button {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: .1rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.task:hover .wrapper_button {
+  background: var(--Check-Background);
+}
+
+.wrapper_button button {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon_check {
+  color: var(--White);
+  display: none;
+}
+
+.task.completed .wrapper_button,
+.task.completed button {
+  background: var(--Check-Background);
+}
+
+.task.completed .icon_check {
+  display: block;
+}
+
+.task.completed p {
+  text-decoration: line-through;
+}
+
+.delete-task {
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.task-container:hover .delete-task {
+  visibility: visible;
+}
