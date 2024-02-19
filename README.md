@@ -2,7 +2,7 @@
 
 O objetivo do projeto era criar uma lista de tarefas, os dados estão sendo salvos em local storage. 
 
-<img src="./to-do/public/todo.png" alt="Foto do projeto">
+<img src="./public/todo.png" alt="Foto do projeto">
 
 ### 🔗 Links
 
